@@ -174,25 +174,33 @@
     </div>
 
     <script>
-      // Countdown timer
-      let countdown = 20;
-      const countdownElement = document.getElementById('countdown');
-      
-      const timer = setInterval(function() {
-        countdown--;
-        countdownElement.textContent = countdown;
+      // Wait for page to fully load
+      window.addEventListener('load', function() {
+        // Countdown timer - starts only after page loads
+        let countdown = 20;
+        const countdownElement = document.getElementById('countdown');
         
-        if (countdown <= 0) {
-          clearInterval(timer);
-          window.location.href = 'https://romidev.netlify.app/';
-        }
-      }, 1000);
+        const timer = setInterval(function() {
+          countdown--;
+          if (countdownElement) {
+            countdownElement.textContent = countdown;
+          }
+          
+          if (countdown <= 0) {
+            clearInterval(timer);
+            window.location.href = 'https://romidev.netlify.app/';
+          }
+        }, 1000);
 
-      // Immediate redirect if user clicks the button or anywhere on the page
-      document.querySelector('.new-portfolio-btn').addEventListener('click', function(e) {
-        e.preventDefault();
-        clearInterval(timer);
-        window.location.href = 'https://romidev.netlify.app/';
+        // Immediate redirect when button is clicked
+        const button = document.querySelector('.new-portfolio-btn');
+        if (button) {
+          button.addEventListener('click', function(e) {
+            e.preventDefault();
+            clearInterval(timer);
+            window.location.href = 'https://romidev.netlify.app/';
+          });
+        }
       });
     </script>
   </body>
