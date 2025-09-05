@@ -4,409 +4,185 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Romi Gupta</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <title>Romi Gupta - Portfolio Moved</title>
+    
+    <!-- Automatic redirect after 3 seconds -->
+    <meta http-equiv="refresh" content="3;url=https://romidev.netlify.app/" />
+    
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+      }
+
+      .container {
+        text-align: center;
+        padding: 2rem;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        max-width: 500px;
+        animation: fadeIn 1s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        opacity: 0.9;
+      }
+
+      .new-portfolio-btn {
+        display: inline-block;
+        padding: 15px 30px;
+        background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+        color: white;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 1.1rem;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        margin: 10px;
+      }
+
+      .new-portfolio-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      .redirect-info {
+        margin-top: 2rem;
+        font-size: 0.9rem;
+        opacity: 0.8;
+      }
+
+      .loading-spinner {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: 3px solid rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        border-top-color: #fff;
+        animation: spin 1s ease-in-out infinite;
+        margin-left: 10px;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .social-links {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .social-link {
+        color: white;
+        font-size: 1.5rem;
+        transition: all 0.3s ease;
+        text-decoration: none;
+      }
+
+      .social-link:hover {
+        transform: scale(1.2);
+        opacity: 0.8;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          margin: 1rem;
+          padding: 1.5rem;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        .subtitle {
+          font-size: 1rem;
+        }
+
+        .new-portfolio-btn {
+          padding: 12px 25px;
+          font-size: 1rem;
+        }
+      }
+    </style>
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Data Analytic Portfolio</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+    <div class="container">
+      <h1>Portfolio Moved!</h1>
+      <p class="subtitle">Hi! I'm Romi Gupta, and I've moved to a new and improved portfolio.</p>
+      
+      <a href="https://romidev.netlify.app/" class="new-portfolio-btn">
+        Visit New Portfolio
+      </a>
+      
+      <div class="redirect-info">
+        <p>You will be automatically redirected in a few seconds...</p>
+        <div class="loading-spinner"></div>
       </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Namstey!</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
+      
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/romii-gupta/" class="social-link" title="LinkedIn">
+          📧
+        </a>
+        <a href="https://github.com/MasterMindRomii" class="social-link" title="GitHub">
+          💻
+        </a>
+        <a href="https://mavenanalytics.io/profile/Romi-Gupta/200064506" class="social-link" title="Maven Analytics">
+          📊
+        </a>
       </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/about--me.png" alt="Romi Gupta profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Romi Gupta </h1>
-        <p class="section__text__p2">Former Intern as a "Statistical Analyst"</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('https://github.com/MasterMindRomii')"
-          >
-            Github
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='https://mavenanalytics.io/profile/Romi-Gupta/200064506'">
-            All Live Dashboards
-          </button>
-        <!-- </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/romii-gupta/'"
-          />
-          <img
-            src="./assets/leetcode (1).svg"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/'"
-          />
-        </div>
-      </div> -->
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <!-- <div class="section__pic-container">
-          <img
-            src="./assets/college-1.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div> -->
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Hands-On Experience</h3>
-              <p>2+ years <br />Data Science & Analytics Domain</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Bachelor's Degree in Computer Application<br />Specialization in <b>Data Science & Analytics (2022-25)</b></p>
-            </div>
-          </div>
-          <div class="text-container"><b></b>
-            <p>
-              Let me introduce myself. I'm <b>Romi Gupta</b>, currently pursuing my Bachelor's Degree in Computer Application at <b>Maharaja Surajmal Institute</b> with a specialization in <b>Data Science & Analytics</b>.
-              
-              What drives my passion for Data Analyst is not just the technical aspect, but <b>the storytelling behind the data</b>. Each dataset holds a narrative waiting to be uncovered, and I am fascinated by the insights that can be derived from it.
-              
-              If you share a similar passion for data and wish to collaborate on projects involving <b>Excel, SQL, Python, Power BI, or Python's frameworks, such as Pandas, Matplotlib, Seaborn and Scikit-Learn,</b> feel free to reach out to me. I am always <b>open to collaborations</b> and eager to explore new opportunities.
-              
-              Looking forward to connecting and collaborating with <b>like-minded individuals</b> to unravel the stories hidden within the data!
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Skills & Profiles</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Data Science & Analytic</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Ms-Excel</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Power BI</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SQL</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Maths(Statistics)</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>DBMS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Practice Profiles(Clickable)</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3><a href="https://leetcode.com/RomiGuptaCS/">Leetcode</a></h3>
-                  <!-- <p>Basic</p> -->
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3><a href="https://platform.stratascratch.com/user/MasterMindRomi">StrataScratch</a></h3>
-                  <!-- <p>Basic</p> -->
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3><a href="https://www.kaggle.com/romiigupta">Kaggle</a></h3>
-                  <!-- <p>Basic</p> -->
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3><a href="https://www.hackerrank.com/profile/romi35532">HackerRank</a></h3>
-                  <!-- <p>Basic</p> -->
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
+    </div>
 
-                                         <!-- Project Section  -->
-    <section id="projects">
-      <p class="section__text__p1">Browse My End-to-End Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/p1.jpg"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">SQL Case Study :A Deep Dive into 120 Years of Olympic History</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/MasterMindRomii/SQL-Case-Study-On-Olympics-Games'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://mavenanalytics.io/project/15251'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/credit-card (3).png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Credit Card Spending Analysis - Power BI</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/MasterMindRomii/Credit-Card-Spending-Analysis-Using-Power-BI'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://mavenanalytics.io/project/15249'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-<!--           <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/p3.jpg"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div> -->
-<!--             <h2 class="experience-sub-title project-title">
-              Mexico Toy Sales Insights</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/MasterMindRomii/Mexico-Toy-Sales-Insights'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.novypro.com/version-live/profile_projects/romi-gupta?Popup=memberProject&Data=1715108764765x961046634296170000'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div> -->
-      <div class="details-container color-container">
-        <div class="article-container">
-          <img
-            src="./assets/p4.jpg"
-            alt="Project 4"
-            class="project-img"
-          />
-        </div>
-        <h2 class="experience-sub-title project-title">
-          Car Price Prediction Model</h2>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2 project-btn"
-            onclick="location.href='https://github.com/MasterMindRomii/Car-Price-Prediction-Model'"
-          >
-            Github
-          </button>
-          <button
-            class="btn btn-color-2 project-btn"
-            onclick="location.href='https://mavenanalytics.io/project/15250'"
-          >
-            Live Demo
-          </button>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:romigupta1875@gmail.com">romigupta1875@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/romii-gupta/">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright © Claim Disclamer Pvt.Ltd 2024 | Terms Of Service | Privacy Policy</p>
-    </footer>
-    <script src="script.js"></script>
+    <script>
+      // Additional JavaScript redirect as backup
+      setTimeout(function() {
+        window.location.href = 'https://romidev.netlify.app/';
+      }, 3000);
+
+      // Immediate redirect if user clicks anywhere
+      document.addEventListener('click', function() {
+        window.location.href = 'https://romidev.netlify.app/';
+      });
+    </script>
   </body>
 </html>
