@@ -7,7 +7,7 @@
     <title>Romi Gupta - Portfolio Moved</title>
     
     <!-- Automatic redirect after 3 seconds -->
-    <meta http-equiv="refresh" content="10;url=https://romidev.netlify.app/" />
+    <meta http-equiv="refresh" content="3;url=https://romidev.netlify.app/" />
     
     <style>
       * {
@@ -174,13 +174,24 @@
     </div>
 
     <script>
-      // Additional JavaScript redirect as backup
-      setTimeout(function() {
-        window.location.href = 'https://romidev.netlify.app/';
-      }, 3000);
+      // Countdown timer
+      let countdown = 20;
+      const countdownElement = document.getElementById('countdown');
+      
+      const timer = setInterval(function() {
+        countdown--;
+        countdownElement.textContent = countdown;
+        
+        if (countdown <= 0) {
+          clearInterval(timer);
+          window.location.href = 'https://romidev.netlify.app/';
+        }
+      }, 1000);
 
-      // Immediate redirect if user clicks anywhere
-      document.addEventListener('click', function() {
+      // Immediate redirect if user clicks the button or anywhere on the page
+      document.querySelector('.new-portfolio-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        clearInterval(timer);
         window.location.href = 'https://romidev.netlify.app/';
       });
     </script>
